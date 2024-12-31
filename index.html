@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabriel Castillo</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+          rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/favicon.ico" type="image/png">
+</head>
+<body>
+
+<!-- Header -->
+<header class="text-center d-flex align-items-center justify-content-center position-relative">
+    <div class="container">
+        <h1 class="display-1 hero-title"><em>Gabriel Castillo</em></h1>
+        <p class="display-5 sans-serif-light hero-subtitle">CS Major @ Cornell</p>
+
+        <!-- Resume Button -->
+        <a href="https://www.google.com" target="_blank">
+            <button type="button" id="resumeButton" class="btn btn-outline-dark btn-lg mt-4 sans-serif-light">
+                Resume
+            </button>
+        </a>
+    </div>
+
+    <div class="scroll-down position-absolute" style="bottom: 20px;">
+        <img src="images/chevron-down.svg" alt="Scroll Down" class="img-fluid">
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark navbar-expand-lg border-body custom-navbar sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="#">Gabriel Castillo</a>
+        <button class="navbar-toggler navbar-dark custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon custom-toggler"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:gabocastillo321@gmail.com" target="_blank">
+                        <img src="images/mail-icon.svg" alt="Email" class="contact-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/GabrielCastilloH/" target="_blank">
+                        <img src="images/github-icon.svg" alt="GitHub" class="contact-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/gabriel-castillo-783261288/" target="_blank">
+                        <img src="images/linkedin-icon.svg" alt="LinkedIn" class="contact-icon">
+                    </a>
+                </li>
+            </ul>
+            <a class="navbar-brand mx-auto d-none d-lg-block" href="#">Gabriel Castillo</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+    <div class="row align-items-center">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+            <img src="images/profile-pic.jpg" alt="Gabriel Castillo" class="img-fluid profile-image">
+        </div>
+        <div class="col-md-8 ms-md-5 mt-4 mt-md-0">
+            <h2 class="mb-4 serif-regular">
+                I'm Gabriel, a Computer Science major at Cornell University.
+            </h2>
+            <div class="sans-serif-light">
+                <p>
+                    I have been learning to code since I was 12. Having started with learning Python to build simple programs
+                    to learning JavaScript to use React Native to build cross-platform mobile applications,
+                    I have spent the last 6 years falling more and more deeply in love with Computer Science.
+                    Currently, I am learning PyTorch and C++ to dive into AI and highly efficient algorithms.
+                    Besides that, I am developing some cross-platform mobile apps in order to launch a start-up.
+                    <br><br>
+                    During my free time I enjoy going to the gym, playing piano and listening to music.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2 class="text-center mb-5 serif-regular"><em>Projects</em></h2>
+    <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-xl-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://github.com/akh1lk/LockedIn">LockedIn</a></h5>
+                    <h6 class="card-subtitle text-muted">Swipe-Based Professional Networking</h6>
+                    <div class="custom-image-container container">
+                        <img src="images/LockedIn-ProjectImage.png" class="card-img-top img-fluid" alt="LockedIn logo">
+                    </div>
+                    <p class="card-text">
+                        Head frontend developer of LockedIn, an app lets users swipe to network, making professional connections effortless.
+                        Won best UI (out of 25 teams) in Cornell AppDev's Hack Challenge.
+                        <br><br><br>
+                        Frontend: <span class="light-bold-text">Swift, UIKit</span><br>
+                        Backend: <span class="light-bold-text">Python, Flask, SQLAlchemy, Docker, Firebase</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-xl-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Critter World</h5>
+                    <h6 class="card-subtitle text-muted">Evolving Artificial Life Simulator</h6>
+                    <div class="custom-image-container container">
+                        <img src="images/critter-world-image.png" class="card-img-top img-fluid" alt="LockedIn logo">
+                    </div>
+                    <p class="card-text">
+                        Led a team of 4 to build a simulation where creatures evolve through eating, reproducing, and mutating.
+                        Designed a language parser, interpreter, and simulation engine with a GUI capable of running billions of ticks to model realistic evolution.<br><br>
+                        Built With: <span class="light-bold-text">Java, JavaFX, Gradle</span><br>
+                        <em>Cannot share code due to academic integrity reasons.</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-xl-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://kogyo.co">Kogyo</a></h5>
+                    <h6 class="card-subtitle text-muted">The Marketplace of the Gig-Economy</h6>
+                    <div class="custom-image-container container">
+                        <img src="images/kogyo-image.png" class="card-img-top img-fluid" alt="LockedIn logo">
+                    </div>
+                    <p class="card-text">
+                        Built entirely by me, Kogyo, dubbed "The Uber of Tasks", is an app that effortlessly matches freelance labor (helpers) with customer requests (tasks).
+                        With the limitless task categories available any task is just one tap away.
+                        <br><br>
+                        Frontend: <span class="light-bold-text">Swift, UIKit</span><br>
+                        Backend: <span class="light-bold-text">Firebase, Flask</span><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tools Section -->
+<section id="skills">
+    <h2 class="text-center mb-5" style="color: var(--background-color);"><em>Technical Skills</em></h2>
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <h5 class="mb-3">Languages</h5>
+            <div class="row">
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/swift-icon.svg" alt="Swift" class="img-fluid">
+                        <p>Swift</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/java-icon.svg" alt="Java" class="img-fluid">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/javascript-icon.svg" alt="JavaScript" class="img-fluid">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/python-icon.svg" alt="Python" class="img-fluid">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/html-icon.svg" alt="HTML" class="img-fluid">
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/css-icon.svg" alt="CSS" class="img-fluid">
+                        <p>CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h5 class="mb-3">Frameworks</h5>
+            <div class="row">
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/react-icon.svg" alt="React" class="img-fluid">
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/react-native-icon.svg" alt="React Native" class="img-fluid">
+                        <p>R Native</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/nodejs-icon.svg" alt="Node.js" class="img-fluid">
+                        <p>Node.js</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/uikit-icon.svg" alt="UIKit" class="img-fluid">
+                        <p>UIKit</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/swiftui-icon.svg" alt="SwiftUI" class="img-fluid">
+                        <p>SwiftUI</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/bootstrap-icon.svg" alt="Bootstrap" class="img-fluid">
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h5 class="mb-3">Tools</h5>
+            <div class="row">
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/git-icon.svg" alt="Git" class="img-fluid">
+                        <p>Git</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/junit-icon.svg" alt="JUnit" class="img-fluid">
+                        <p>JUnit</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/docker-icon.svg" alt="Docker" class="img-fluid">
+                        <p>Docker</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/postman-icon.svg" alt="Postman" class="img-fluid">
+                        <p>Postman</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/mongodb-icon.svg" alt="MongoDB" class="img-fluid">
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="skill-item">
+                        <img src="icons/firebase-icon.svg" alt="Firebase" class="img-fluid">
+                        <p>Firebase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Gabriel Castillo</p>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- Modal Image -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.getElementsByClassName("custom-close")[0];
+        const navbar = document.querySelector(".navbar");
+
+        document.querySelectorAll("#projects .custom-image-container img").forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+                navbar.classList.add("navbar-hidden");
+            });
+        });
+
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+            navbar.classList.remove("navbar-hidden");
+        });
+
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                navbar.classList.remove("navbar-hidden");
+            }
+        });
+    });
+</script>
+<div id="imageModal" class="modal">
+    <span class="custom-close">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Zoomed Image">
+    </div>
+</div>
+</body>
+</html>
